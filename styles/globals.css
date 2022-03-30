@@ -1,16 +1,29 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.snap-fullPage {
+  @apply flex h-[calc(100vh-79px)] snap-start items-center justify-center overflow-hidden;
+}
+
+.full-page-snap-main {
+  @apply h-[calc(100vh-79px)] snap-y snap-mandatory overflow-scroll overflow-x-hidden scroll-smooth transition delay-150 duration-1000 ease-in-out scrollbar-hide
+}
+
+.gradientCircle {
+  @apply absolute rounded-full bg-gradient-to-t to-[#FC4D6D] from-[#FDA02F]
 }

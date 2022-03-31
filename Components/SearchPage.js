@@ -3,8 +3,8 @@ import TopTutor from "./HomePage/TopTutors";
 
 const SearchPage = () => {
     return (
-        <div className="full-page-snap-main">
-            <TopTutor />
+        <div className='max-w-[1440px] w-full block mx-auto'>
+            {/* <TopTutor /> */}
         </div>
     )
 }

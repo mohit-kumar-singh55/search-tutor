@@ -1,17 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import CourseCart from '../CourseCart';
-import Link from 'next/link';
-import createScrollSnap from 'scroll-snap';
 
 function TopTutors() {
   const container = useRef();
-
-  useEffect(() => {
-    const element = container.current
-    createScrollSnap(element, {
-      snapDestinationY: '100%',
-    }, () => console.log('snapped'))
-  }, [container])
 
   return (
     <main ref={container}

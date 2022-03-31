@@ -11,7 +11,7 @@ function CourseCart({
 }) {
   return (
     <Link href={href} passHref>
-      <div className="flex rounded-md transition-all ease-in-out snap-start">
+      <div className="flex rounded-md transition-all ease-in-out snap-end">
         <div className="w-[320px] overflow-hidden rounded-2xl  pb-[22px] font-poppins shadow-xl   ring-2 ring-[#FC4D6D] ring-opacity-10">
           <CoverSection />
           <TutorDetails

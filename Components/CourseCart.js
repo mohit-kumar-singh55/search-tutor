@@ -11,7 +11,7 @@ function CourseCart({
 }) {
   return (
     <Link href={href} passHref>
-      <div className="flex rounded-md transition-all ease-in-out">
+      <div className="flex rounded-md transition-all ease-in-out snap-start">
         <div className="w-[320px] overflow-hidden rounded-2xl  pb-[22px] font-poppins shadow-xl   ring-2 ring-[#FC4D6D] ring-opacity-10">
           <CoverSection />
           <TutorDetails
@@ -165,7 +165,7 @@ function CourseCart({
 
   function BookTrialBtn({ space }) {
     return (
-      <div className={`z-50 relative flex justify-center ${space} drop-shadow-lg`}>
+      <div className={`z-20 relative flex justify-center ${space} drop-shadow-lg`}>
         <Link href={'/'}>
           <a className="inline-block rounded-full drop-shadow-lg border-2 border-[#FC4D6D] px-6 py-2 text-[14px] font-[600] text-[#FC4D6D] transition duration-150 ease-in-out hover:bg-[#FC4D6D] hover:text-white ">
             Book Trial | $20/hr
